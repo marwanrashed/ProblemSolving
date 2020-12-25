@@ -4,7 +4,7 @@
 
 1. [Installation](#installation)
 2. [Project Motivation](#motivation)
-3. [Cloning instructions] (#cloning)
+3. [Cloning instructions](#cloning)
 
 
 ## Installation <a name="installation"></a>
