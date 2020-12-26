@@ -28,6 +28,7 @@ class LinkedList {
     void prepend (int);
     void deleteWithValue(int);
     void printList();
+    void free_singly_linked_list(Node*);
 };
 
 void LinkedList::append (int data) {
@@ -79,7 +80,14 @@ void LinkedList::printList(){
     cout << endl;
 }
 
+void LinkedList::free_singly_linked_list(Node* node) {
+    while (node) {
+        Node* temp = node;
+        node = node->next;
 
+        free(temp);
+    }
+}
 int main () {
     cout << "Please insert the linked list head " << endl;
     int a,b,c,d,e;
@@ -98,4 +106,5 @@ int main () {
     linkedList.printList();
     linkedList.deleteWithValue(3);
     linkedList.printList();
+    linkedList.free_singly_linked_list();
 }
